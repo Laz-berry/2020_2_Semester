@@ -1,16 +1,19 @@
+#ifndef SOLUTION_H
+#define SOLUTION_H
+
 #include <iostream>
-#include <vector>
-#include <cmath>
-using namespace std;
 
-class Solution {
-/* DO NOT change this core function prototype. 
- * The main function of the evaluation system will access your codes through this entry point
- */
-public:
-    vector<vector<int>> kClosest(vector<vector<int>>& points, vector<int> keypoint, int K);
-/* DO NOT change by here */
-
-/* Put your codes */
-    void value(vector<vector<int>>& points, vector<int> keypoint, int K);
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
 };
+
+class Solution
+{
+public:
+    unsigned long long int getPathSum (struct TreeNode* root);
+    struct TreeNode* buildTree (std::string filename);
+};
+
+#endif
